@@ -3,7 +3,6 @@
   <head>
     <title>Script-Beam X - About</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <link rel="icon" type="images/logo.png" href="path/to/your-icon.png" />
   </head>
   <body>
@@ -12,15 +11,55 @@
     </a>
 
     <div class="header">
-      <h2>About Script-Beam</h2>
-      <p>Expanding the idea of execution.</p>
-      <p>
-        We started Script-Beam a few days after Synapse X announced their quit
-        and moving sides to the Roblox Anticheat. We knew how much the people
-        loved Synapse and wanted to make something the community could use based
-        on it. We then came up with Script-Beam. The new best way to bypass both
-        Synapse and Byfron.
-      </p>
+      <h2>Starter Scripts</h2>
+
+      <!-- First Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Infinite Yield</button>
+        <div class="dropdown-content" style="display: none;">
+          <!-- Content for Dropdown 1 -->
+          <p>
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Dex Explorer</button>
+        <div class="dropdown-content" style="display: none;">
+          <!-- Content for Dropdown 2 -->
+          <p>
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua",
+            true))()
+          </p>
+        </div>
+      </div>
+
+      <!-- Third Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Chat Bypass</button>
+        <div class="dropdown-content" style="display: none;">
+          <!-- Content for Dropdown 3 -->
+          <p>
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser",true))()
+          </p>
+        </div>
+      </div>
+      <!-- Add more dropdowns as needed -->
     </div>
+
+    <script>
+      // JavaScript to handle dropdown functionality
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach((dropdown) => {
+        const button = dropdown.querySelector(".dropbtn");
+        const content = dropdown.querySelector(".dropdown-content");
+        button.addEventListener("click", function () {
+          content.style.display =
+            content.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
   </body>
 </html>
