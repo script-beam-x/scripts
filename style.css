@@ -83,3 +83,21 @@ button:hover,
   transform: scale(1.1); /* Increase size on hover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
 }
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
