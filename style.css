@@ -101,3 +101,32 @@ button:hover,
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
 }
 
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://media4.giphy.com/media/tVM0hQmU52iKcLI1Kk/giphy.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.download-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Adjust as needed */
+}
